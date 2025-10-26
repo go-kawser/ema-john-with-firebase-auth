@@ -1,4 +1,3 @@
-// src/types/index.ts
 import { User } from "firebase/auth";
 
 export interface Product {

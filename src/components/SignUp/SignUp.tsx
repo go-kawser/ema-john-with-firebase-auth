@@ -1,4 +1,3 @@
-// src/components/SignUp/SignUp.tsx
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";

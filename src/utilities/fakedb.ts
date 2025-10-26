@@ -1,4 +1,3 @@
-// use local storage to manage cart data
 export interface ShoppingCart {
   [key: string]: number;
 }

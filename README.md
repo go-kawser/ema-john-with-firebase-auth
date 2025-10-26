@@ -1,21 +1,21 @@
-# Ema‑John — Shopping App (React + TypeScript + Firebase + Vite + Tailwind)
+# Ema‑John | Shopping App (React + TypeScript + Firebase + Vite + Tailwind)
 
-"A production‑ready, modular e‑commerce demo application built with React, TypeScript, Vite, Tailwind CSS and Firebase (Authentication + Hosting). This repository demonstrates modern frontend architecture, client-side state + persistence, routing, and a deployment pipeline to Firebase Hosting."
+A production‑ready, modular e‑commerce demo application built with React, TypeScript, Vite, Tailwind CSS and Firebase (Authentication + Hosting). This repository demonstrates modern frontend architecture, client-side state + persistence, routing, and a deployment pipeline to Firebase Hosting.
 
 ## Quick links
 
-- [package.json](package.json) — scripts & dependencies
-- [index.html](index.html) — app entry HTML
-- [`main`](src/main.tsx) — bootstrap / root renderer ([src/main.tsx](src/main.tsx))
-- [`App`](src/App.tsx) — top-level application component ([src/App.tsx](src/App.tsx))
-- [Global styles](src/index.css) — Tailwind + base styles ([src/index.css](src/index.css))
-- [Component styles](src/App.css) — component-level styles ([src/App.css](src/App.css))
-- [Firebase configuration](firebase.json) — hosting config ([firebase.json](firebase.json))
-- [.gitignore](.gitignore) — repository ignores
-- [Tailwind config](tailwind.config.js) — Tailwind customization
-- [Vite config](vite.config.ts) — build/dev configuration
+- [package.json](package.json) - scripts & dependencies
+- [index.html](index.html) - app entry HTML
+- [`main`](src/main.tsx) - bootstrap / root renderer ([src/main.tsx](src/main.tsx))
+- [`App`](src/App.tsx) - top-level application component ([src/App.tsx](src/App.tsx))
+- [Global styles](src/index.css) - Tailwind + base styles ([src/index.css](src/index.css))
+- [Component styles](src/App.css) - component-level styles ([src/App.css](src/App.css))
+- [Firebase configuration](firebase.json) - hosting config ([firebase.json](firebase.json))
+- [.gitignore](.gitignore) - repository ignores
+- [Tailwind config](tailwind.config.js) - Tailwind customization
+- [Vite config](vite.config.ts) - build/dev configuration
 
-## Key features
+### Key features
 
 - Modern React 18 + TypeScript codebase.
 - Fast development with Vite and HMR ([vite](https://vitejs.dev/), see [package.json](package.json) scripts).
@@ -28,31 +28,31 @@
 - Sample product data for local development: [public/products.json](public/products.json) and [src/fakeData/products.json](src/fakeData/products.json).
 - FontAwesome integration for icons.
 
-## Getting started (local)
+### Getting started----> local
 
-1. Install dependencies
+1. **Install dependencies**
    npm install
 
-2. Run dev server
+2. **Run dev server**
    npm run dev
 
    - Uses the `dev` script in [package.json](package.json)
 
-3. Build for production
+3. **Build for production**
    npm run build
 
-4. Preview production build locally
+4. **Preview production build locally**
    npm run preview
 
-## Recommended workflow
+### Recommended Workflow
 
 - Use branches for features and PRs.
 - Run the dev server while developing components in [src/components](src/components).
 - Keep global styles in [src/index.css](src/index.css) and utility CSS in [src/App.css](src/App.css).
 
-## Firebase hosting / deployment
+### Firebase hosting | deployment
 
-- The hosting configuration uses `dist` as the public directory — see [firebase.json](firebase.json).
+- The hosting configuration uses `dist` as the public directory - see [firebase.json](firebase.json).
 - Common deployment steps:
   1. Build: npm run build
   2. Login to Firebase CLI: firebase login
@@ -60,19 +60,19 @@
   4. Deploy hosting: firebase deploy --only hosting
      "If you use the included `.firebaserc` ensure it points to the correct Firebase project."
 
-## Project structure (high level)
+### Project structure --> Top High Level
 
 - src/
-  - main.tsx — app bootstrap ([src/main.tsx](src/main.tsx))
-  - App.tsx — root component ([src/App.tsx](src/App.tsx))
-  - index.css, App.css — styling ([src/index.css](src/index.css)) ([src/App.css](src/App.css))
-  - components/ — feature/components (Cart, Checkout, Shop, Product, Header, etc.)
-  - fakeData/products.json — dev product fixtures ([src/fakeData/products.json](src/fakeData/products.json))
-  - firebase/ — Firebase helper modules (auth, config)
-- public/ — static assets ([public/products.json](public/products.json), favicon)
+  - main.tsx - app bootstrap ([src/main.tsx](src/main.tsx))
+  - App.tsx - root component ([src/App.tsx](src/App.tsx))
+  - index.css, App.css - styling ([src/index.css](src/index.css)) ([src/App.css](src/App.css))
+  - components/ - feature/components (Cart, Checkout, Shop, Product, Header, etc.)
+  - fakeData/products.json - dev product fixtures ([src/fakeData/products.json](src/fakeData/products.json))
+  - firebase/ - Firebase helper modules (auth, config)
+- public/ - static assets ([public/products.json](public/products.json), favicon)
 - build output: dist (generated by `npm run build`)
 
-## Dependencies (high level)
+### Dependencies------> high level
 
 - react, react-dom, react-router-dom
 - typescript, vite, @vitejs/plugin-react
@@ -80,28 +80,29 @@
 - firebase
 - localforage, match-sorter, fontawesome
 
-## Development tips
+### Development Tips
 
 - Inspect the app entry in [index.html](index.html) and the script path for main ([index.html](index.html)).
 - Tailwind utilities are configured via [tailwind.config.js](tailwind.config.js).
 - Use the browser DevTools to emulate auth flows and local storage persistence.
 
-## Contributing
+### Contributing
 
-- Fork → feature branch → PR with a clear description and screenshots.
+- Fork --> feature branch --> PR with a clear description and screenshots.
 - Keep changes small and focused; add unit tests where applicable.
 - Follow existing code patterns and TypeScript types.
 
-## Acknowledgements
+### Acknowledgements
 
 - Built with Vite, React, TypeScript, Tailwind CSS and Firebase.
 - Sample dataset and app idea inspired by common e‑commerce tutorials.
 
-## License
+#### License
 
 - No license file included. Add a LICENSE file to declare usage terms.
 
-## Contact / demos
+#### Contact | Demos
 
+- **Email:** abu.kayser.official@gmail.com
 - To run locally: follow the Getting started section above.
 - For a production demo, deploy the `dist` folder to Firebase Hosting (see [firebase.json](firebase.json)).
